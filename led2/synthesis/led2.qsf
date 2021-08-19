@@ -49,3 +49,53 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name VERILOG_FILE ../hdl/led2.v
 set_global_assignment -name VERILOG_FILE ../hdl/button_controller.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../hdl/led_controller.v
+set_location_assignment PIN_W15 -to o_board_leds[0]
+set_location_assignment PIN_AA24 -to o_board_leds[1]
+set_location_assignment PIN_V16 -to o_board_leds[2]
+set_location_assignment PIN_V15 -to o_board_leds[3]
+set_location_assignment PIN_AF26 -to o_board_leds[4]
+set_location_assignment PIN_AE26 -to o_board_leds[5]
+set_location_assignment PIN_Y16 -to o_board_leds[6]
+set_location_assignment PIN_AA23 -to o_board_leds[7]
+set_location_assignment PIN_V11 -to i_clk
+set_location_assignment PIN_U14 -to i_button
+set_location_assignment PIN_AG8 -to o_sensor_led
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_button
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_board_leds
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_sensor_led
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to i_button
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to i_clk
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_board_leds
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to o_sensor_led
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[7]
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[6]
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[5]
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[4]
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[3]
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[2]
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[1]
+set_instance_assignment -name SLEW_RATE 1 -to o_board_leds[0]
+set_instance_assignment -name SLEW_RATE 1 -to o_sensor_led
+set_global_assignment -name VERILOG_FILE ../hdl/debouncer.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

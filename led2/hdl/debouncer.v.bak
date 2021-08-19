@@ -1,0 +1,6 @@
+module debouncer (
+	input i_clk,
+	input i_button,
+	
+	output reg o_button
+);
