@@ -1,0 +1,36 @@
+|led1
+i_clk => r_cnt[0].CLK
+i_clk => r_cnt[1].CLK
+i_clk => r_cnt[2].CLK
+i_clk => r_cnt[3].CLK
+i_clk => r_cnt[4].CLK
+i_clk => r_cnt[5].CLK
+i_clk => r_cnt[6].CLK
+i_clk => r_cnt[7].CLK
+i_clk => r_cnt[8].CLK
+i_clk => r_cnt[9].CLK
+i_clk => r_cnt[10].CLK
+i_clk => r_cnt[11].CLK
+i_clk => r_cnt[12].CLK
+i_clk => r_cnt[13].CLK
+i_clk => r_cnt[14].CLK
+i_clk => r_cnt[15].CLK
+i_clk => r_cnt[16].CLK
+i_clk => r_cnt[17].CLK
+i_clk => r_cnt[18].CLK
+i_clk => r_cnt[19].CLK
+i_clk => r_cnt[20].CLK
+i_clk => r_cnt[21].CLK
+i_clk => r_cnt[22].CLK
+i_clk => r_cnt[23].CLK
+i_clk => r_cnt[24].CLK
+i_clk => r_cnt[25].CLK
+i_clk => r_cnt[26].CLK
+i_clk => r_cnt[27].CLK
+i_clk => r_cnt[28].CLK
+i_clk => r_cnt[29].CLK
+i_clk => r_cnt[30].CLK
+i_clk => r_cnt[31].CLK
+o_led << r_cnt[25].DB_MAX_OUTPUT_PORT_TYPE
+
+
